@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DayMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>⚡ DayMaster</h1>
+    <p>Track your daily progress smartly</p>
+
+    <!-- Energy -->
+    <div class="card">
+        <h3>Energy Level: <span id="energyValue">5</span>/10</h3>
+        <input type="range" min="1" max="10" value="5" id="energySlider">
+    </div>
+
+    <!-- Add Task -->
+    <div class="card">
+        <input type="text" id="taskInput" placeholder="Enter your task...">
+        <button onclick="addTask()">+ Add Task</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="card stats">
+        <p>✅ Completed: <span id="completed">0</span></p>
+        <p>📌 Remaining: <span id="remaining">0</span></p>
+    </div>
+
+    <!-- Progress -->
+    <div class="card">
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+
+    <!-- Task List -->
+    <div class="card">
+        <h3>Your Tasks</h3>
+        <ul id="taskList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
